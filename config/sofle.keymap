@@ -17,20 +17,20 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "RSTHD";
+            display-name = "RSTHD";
             bindings = <
-&kp GRAVE  &kp N1      &kp N2     &kp N3       &kp N4       &kp N5                          &kp N6  &kp N7       &kp N8       &kp N9      &kp N0         &kp BSLH
-&kp ESC    &kp J       &kp C      &kp Y        &kp F        &kp K                           &kp Z   &kp L        &kp COMMA    &kp U       &kp Q          &kp EQUAL
-&kp DEL    &mt LALT R  &mt GUI S  &mt LCTRL T  &mt LSHFT H  &kp D                           &kp M   &mt RSHFT N  &mt RCTRL A  &mt RGUI I  &mt RALT O     &kp SQT
-&to LOWER  &kp FSLH    &kp V      &kp G        &kp P        &kp B      &none     &none      &kp X   &kp W        &kp DOT      &kp SEMI    &kp MINUS      &to RAISE
-                       &kp LC(C)  &kp LC(V)    &kp LC(S)    &kp SPACE  &kp BSPC  &kp ENTER  &kp E   &kp TAB      &kp LEFT     &kp RIGHT
+&kp GRAVE  &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                          &kp N6  &kp N7       &kp N8       &kp N9      &kp N0         &kp BSLH
+&kp ESC    &kp J       &kp C       &kp Y        &kp F        &kp K                           &kp Z   &kp L        &kp COMMA    &kp U       &kp Q          &kp EQUAL
+&kp DEL    &mt LALT R  &mt LGUI S  &mt LCTRL T  &mt LSHFT H  &kp D                           &kp M   &mt RSHFT N  &mt RCTRL A  &mt RGUI I  &mt RALT O     &kp SQT
+&to LOWER  &kp FSLH    &kp V       &kp G        &kp P        &kp B      &none     &none      &kp X   &kp W        &kp DOT      &kp SEMI    &kp MINUS      &to RAISE
+                       &kp LC(C)   &kp LC(V)    &kp LC(S)    &kp SPACE  &kp BSPC  &kp ENTER  &kp E   &kp TAB      &kp LEFT     &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
-            label = "F keys";
+            display-name = "F keys";
             bindings = <
 &to BASE   &kp F1      &kp F2     &kp F3       &kp F4       &kp F5                          &kp F6  &kp F7       &kp F8       &kp F9      &kp F10        &kp F11
 &trans     &trans      &trans     &trans       &trans       &trans                          &trans  &trans       &trans       &trans      &trans         &kp F12
@@ -43,13 +43,13 @@
         };
 
         raise_layer {
-            label = "QWERTY";
+            display-name = "QWERTY";
             bindings = <
-&kp GRAVE  &kp N1      &kp N2     &kp N3       &kp N4       &kp N5                          &kp N6  &kp N7       &kp N8       &kp N9      &kp N0         &kp BSLH
-&kp ESC    &kp Q       &kp W      &kp E        &kp R        &kp T                           &kp Y   &kp U        &kp I        &kp O       &kp P          &kp EQUAL
-&kp DEL    &mt LALT A  &mt GUI S  &mt LCTRL D  &mt LSHFT F  &kp G                           &kp H   &mt RSHFT J  &mt RCTRL K  &mt RGUI L  &mt RALT SEMI  &kp SQT
-&to LOWER  &kp Z       &kp X      &kp C        &kp V        &kp B      &none     &none      &kp N   &kp M        &kp COMMA    &kp DOT     &kp FSLH       &to BASE
-                       &none      &none        &none        &kp SPACE  &kp BSPC  &kp ENTER  &kp E   &kp TAB      &kp LEFT     &kp RIGHT
+&kp GRAVE  &kp N1      &kp N2      &kp N3       &kp N4       &kp N5                          &kp N6  &kp N7       &kp N8       &kp N9      &kp N0         &kp BSLH
+&kp ESC    &kp Q       &kp W       &kp E        &kp R        &kp T                           &kp Y   &kp U        &kp I        &kp O       &kp P          &kp EQUAL
+&kp DEL    &mt LALT A  &mt LGUI S  &mt LCTRL D  &mt LSHFT F  &kp G                           &kp H   &mt RSHFT J  &mt RCTRL K  &mt RGUI L  &mt RALT SEMI  &kp SQT
+&to LOWER  &kp Z       &kp X       &kp C        &kp V        &kp B      &none     &none      &kp N   &kp M        &kp COMMA    &kp DOT     &kp FSLH       &to BASE
+                       &none       &none        &none        &kp SPACE  &kp BSPC  &kp ENTER  &kp E   &kp TAB      &kp LEFT     &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
