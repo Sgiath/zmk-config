@@ -19,10 +19,10 @@
         default_layer {
             label = "RSTHD";
             bindings = <
-&kp GRAVE  &kp N1      &kp N2     &kp N3       &kp N4       &kp N5                          &kp N6  &kp N7       &kp N8       &kp N9      &kp N0      &kp BSLH
-&kp ESC    &kp J       &kp C      &kp Y        &kp F        &kp K                           &kp Z   &kp L        &kp COMMA    &kp U       &kp Q       &kp EQUAL
-&kp DEL    &mt LALT R  &mt GUI S  &mt LCTRL T  &mt LSHFT H  &kp D                           &kp M   &mt RSHFT N  &mt RCTRL A  &mt RGUI I  &mt RALT O  &kp SQT
-&to LOWER  &kp FSLH    &kp V      &kp G        &kp P        &kp B      &none     &none      &kp X   &kp W        &kp DOT      &kp SEMI    &kp MINUS   &to RAISE
+&kp GRAVE  &kp N1      &kp N2     &kp N3       &kp N4       &kp N5                          &kp N6  &kp N7       &kp N8       &kp N9      &kp N0         &kp BSLH
+&kp ESC    &kp J       &kp C      &kp Y        &kp F        &kp K                           &kp Z   &kp L        &kp COMMA    &kp U       &kp Q          &kp EQUAL
+&kp DEL    &mt LALT R  &mt GUI S  &mt LCTRL T  &mt LSHFT H  &kp D                           &kp M   &mt RSHFT N  &mt RCTRL A  &mt RGUI I  &mt RALT O     &kp SQT
+&to LOWER  &kp FSLH    &kp V      &kp G        &kp P        &kp B      &none     &none      &kp X   &kp W        &kp DOT      &kp SEMI    &kp MINUS      &to RAISE
                        &kp LC(C)  &kp LC(V)    &kp LC(S)    &kp SPACE  &kp BSPC  &kp ENTER  &kp E   &kp TAB      &kp LEFT     &kp RIGHT
             >;
 
@@ -32,11 +32,11 @@
         lower_layer {
             label = "F keys";
             bindings = <
-&to BASE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
-&trans   &trans &trans &trans &trans &trans                &trans &trans &trans &trans &trans  &kp F12
-&trans   &trans &trans &trans &trans &trans                &trans &trans &trans &trans &trans  &trans
-&none    &trans &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans  &none
-                &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans
+&to BASE   &kp F1      &kp F2     &kp F3       &kp F4       &kp F5                          &kp F6  &kp F7       &kp F8       &kp F9      &kp F10        &kp F11
+&trans     &trans      &trans     &trans       &trans       &trans                          &trans  &trans       &trans       &trans      &trans         &kp F12
+&trans     &trans      &trans     &trans       &trans       &trans                          &trans  &trans       &trans       &trans      &trans         &trans
+&none      &trans      &trans     &trans       &trans       &trans     &trans    &trans     &trans  &trans       &trans       &trans      &trans         &none
+                       &trans     &trans       &trans       &trans     &trans    &trans     &trans  &trans       &trans       &trans     
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
